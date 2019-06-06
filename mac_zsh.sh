@@ -24,7 +24,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 
 plugins=(
-  git autojump zsh-autosuggestions z brew
+  git autojump zsh-autosuggestions  brew z
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -63,6 +63,16 @@ alias proxy='export all_proxy=socks5://127.0.0.1:1086'
 alias unproxy='unset all_proxy'
 alias pc=pbcopy
 alias pp=pbpaste
+
+alias ..='cd ../'                           # Go back 1 directory level
+alias ...='cd ../../'                       # Go back 2 directory levels
+alias .3='cd ../../../'                     # Go back 3 directory levels
+alias .4='cd ../../../../'                  # Go back 4 directory levels
+alias .5='cd ../../../../../'               # Go back 5 directory levels
+alias .6='cd ../../../../../../'	    # Go back 6 directory levels
+alias ~="cd ~"                              # ~:            Go Home
+
+
 
 
 export NVM_DIR="$HOME/.nvm"
