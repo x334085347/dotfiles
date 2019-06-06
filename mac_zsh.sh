@@ -63,3 +63,6 @@ source /usr/local/opt/nvm/nvm.sh
 # source /Users/xujiang/ideaProjects/study/tools/bash-insulter/src/bash.command-not-found
 
 alias vim="/usr/local/bin/vim"
+export EDITOR='vim';
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
