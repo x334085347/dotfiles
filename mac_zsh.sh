@@ -1,11 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
-export SCALA_HOME=/Users/xujiang/opt/scala-2.10.7
-export MAVEN_HOME=/Users/xujiang/opt/tools/apache-maven-3.6.0
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$SCALA_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/xujiang/.oh-my-zsh"
-
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=blue'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -29,61 +21,8 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 #POWERLEVEL9K_VCS_GIT_ICON='\uF408 '
 #POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uF408 '
-###end 
-
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
   git autojump zsh-autosuggestions z brew
 )
@@ -125,13 +64,6 @@ alias unproxy='unset all_proxy'
 alias pc=pbcopy
 alias pp=pbpaste
 
-# overriding agnoster theme context
-# prompt_context () { }
-
-# prompt_dir(){
-#    prompt_segment blue $CURRENT_FG '%3~'
-#}
-# end theme
 
 export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/nvm/nvm.sh
