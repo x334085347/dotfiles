@@ -24,7 +24,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 
 plugins=(
-  git autojump zsh-autosuggestions  brew z
+  git autojump zsh-autosuggestions  brew z zsh-syntax-highlighting vscode
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -49,7 +49,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -59,25 +58,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias proxy='export all_proxy=socks5://127.0.0.1:1086'
-alias unproxy='unset all_proxy'
-alias pc=pbcopy
-alias pp=pbpaste
-
-alias ..='cd ../'                           # Go back 1 directory level
-alias ...='cd ../../'                       # Go back 2 directory levels
-alias .3='cd ../../../'                     # Go back 3 directory levels
-alias .4='cd ../../../../'                  # Go back 4 directory levels
-alias .5='cd ../../../../../'               # Go back 5 directory levels
-alias .6='cd ../../../../../../'	    # Go back 6 directory levels
-alias ~="cd ~"                              # ~:            Go Home
-
-
-
-
 export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/nvm/nvm.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source /Users/xujiang/ideaProjects/study/tools/bash-insulter/src/bash.command-not-found
 
 alias vim="/usr/local/bin/vim"
