@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=blue'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -62,7 +63,7 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/nvm/nvm.sh
 # source /Users/xujiang/ideaProjects/study/tools/bash-insulter/src/bash.command-not-found
 
-alias vim="/usr/local/bin/vim"
+#alias vim="/usr/local/bin/vim"
 export EDITOR='vim';
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';

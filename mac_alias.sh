@@ -13,7 +13,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+#alias d="cd ~/Documents/Dropbox"  # conflict with zsh
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
