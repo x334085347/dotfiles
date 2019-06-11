@@ -10,7 +10,6 @@ for file in ${files[@]} ;
 done ;
 #end bak up
 export dir_name=$(cd "$(dirname "$0")";pwd)
-ln -s -f ${dir_name}/.vimrc ~/.vimrc
-ln -s -f ${dir_name}/.vim  ~/.vim
-
-
+ln -s -f ${dir_name}/vimrc ~/.vimrc
+ln -s -f ${dir_name}/vim  ~/.vim
+ln -s -f ${dir_name}/tmux.conf ~/.tmux.conf
