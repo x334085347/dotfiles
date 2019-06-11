@@ -40,3 +40,7 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'	    # Go back 6 directory levels
 alias ~="cd ~"                              # ~:            Go Home
 
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+	alias "${method}"="lwp-request -m '${method}'"
+done
+
