@@ -1,7 +1,3 @@
-" Use the Solarized Dark theme
-colorscheme molokai
-let g:solarized_termtrans=1
-
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -69,7 +65,7 @@ set ruler
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
-set showmode
+" set showmode
 " Show the filename in the window titlebar
 set title
 " Show the (partial) command as it’s being typed
@@ -103,3 +99,16 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
+
+" Use the Solarized Dark theme
+" set t_Co=256
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized
