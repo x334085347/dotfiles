@@ -1,6 +1,16 @@
 # profile
+## Add a new plugin:
+```bash
+git submodule add   https://github.com/vim-airline/vim-airline.git  vim/plugged/vim-airline
+```
 
+## install plugins from submodules:
+git submodule update --init
 
+## Update all plugins to latest:
+```
+git submodule update --recursive --remote
+```
 ### refrence :   
    https://github.com/nicknisi/dotfiles.git
 	https://github.com/amix/vimrc.git.   
