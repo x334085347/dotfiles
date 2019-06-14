@@ -89,7 +89,9 @@ endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
-nmap <c-s> :w<CR>
+nnoremap <silent> <C-S> :<C-u>Update<CR>
+inoremap <c-s> <Esc>:update<CR>
+vmap <C-s> <esc>:w<CR>gv
 
 " Automatic commands
 if has("autocmd")

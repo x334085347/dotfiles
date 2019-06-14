@@ -44,3 +44,5 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "${method}"="lwp-request -m '${method}'"
 done
 
+
+alias vim="stty stop '' -ixoff ; vim"
