@@ -5,7 +5,9 @@ git submodule add   https://github.com/vim-airline/vim-airline.git  vim/plugged/
 ```
 
 ## install plugins from submodules:
+```
 git submodule update --init
+```
 
 ## Update all plugins to latest:
 ```
