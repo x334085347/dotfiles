@@ -1,3 +1,1 @@
-[submodule "vim/autoload/vim/plugged/vim-airline"]
-	path = vim/autoload/vim/plugged/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
+

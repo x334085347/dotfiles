@@ -53,7 +53,7 @@ set ignorecase
 " Highlight dynamically as pattern is typed
 set incsearch
 " Always show status line
-set laststatus=2
+ set laststatus=2
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
@@ -103,11 +103,14 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
+let g:airline_theme='dark'
+let g:airline_solarized_bg='dark'
 
 " Use the Solarized Dark theme
-" set t_Co=256
+set t_Co=256
 let g:solarized_termcolors=256
 syntax enable
 set background=dark
