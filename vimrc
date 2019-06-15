@@ -89,7 +89,7 @@ endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
-nnoremap <silent> <C-S> :<C-u>Update<CR>
+nnoremap <silent> <C-S> :<C-u>update<CR>
 inoremap <c-s> <Esc>:update<CR>
 vmap <C-s> <esc>:w<CR>gv
 
