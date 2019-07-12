@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 #bak
-files=('.vimrc' '.vim' )
+files=('.vimrc' '.vim' '.tmux.conf' )
 for file in ${files[@]} ; do
  if [ -f ~/$file -o  -d ~/$file ]; then
      echo "bak  $file" ;
